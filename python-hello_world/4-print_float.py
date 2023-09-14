@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-foobar = 3.141592
-print(f'Float:{foobar: .2f}')
+number = 3.141592
+print('Float: {:.2f}'.format(number))
