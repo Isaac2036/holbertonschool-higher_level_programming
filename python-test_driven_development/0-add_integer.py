@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Defines an integer addition function."""
 
+
 def add_integer(a, b=98):
     """ add two integers or flots """
     if type(a) is not int and type(a) is not float:
