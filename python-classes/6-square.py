@@ -1,60 +1,71 @@
 #!/usr/bin/python3
-# 6-square.py
 
-"""Define a class Square."""
+
+"""The summary line for a class docstring should fit on one line.
+
+    If the class has public attributes, they may be documented here
+    in an ``Attributes`` section and follow the same formatting as a
+    function's ``Args`` section. Alternatively, attributes may be documented
+    inline with the attribute's declaration (see __init__ method below).
+
+    Properties created with the ``@property`` decorator should be documented
+    in the property's getter method.
+
+    Attributes:
+        attr1 (str): Description of `attr1`.
+
+    """
+
 
 class Square:
-    """Represent a square."""
+    """The summary line for a class docstring should fit on one line."""
 
     def __init__(self, size=0, position=(0, 0)):
-        """Initialize a new square.
-
-        Args:
-            size (int): The size of the new square.
-            position (int, int): The position of the new square.
-        """
+        """The summary line for a class docstring should fit on one line."""
         self.size = size
         self.position = position
 
     @property
     def size(self):
-        """Get/set the current size of the square."""
-        return (self.__size)
-
-    @size.setter
-    def size(self, value):
-        if not isinstance(value, int):
-            raise TypeError("size must be an integer")
-        elif value < 0:
-            raise ValueError("size must be >= 0")
-        self.__size = value
+        """The summary line for a class docstring should fit on one line."""
+        return self.__size
 
     @property
     def position(self):
-        """Get/set the current position of the square."""
-        return (self.__position)
+        """The summary line for a class docstring should fit on one line."""
+        return self.__position
+
+    @size.setter
+    def size(self, value):
+        """The summary line for a class docstring should fit on one line."""
+        if type(value) is not int:
+            raise TypeError("size must be an integer")
+        elif value < 0:
+                raise ValueError("size must be >= 0")
+        else:
+            self.__size = value
 
     @position.setter
     def position(self, value):
-        if (not isinstance(value, tuple) or
-                len(value) != 2 or
-                not all(isinstance(num, int) for num in value) or
-                not all(num >= 0 for num in value)):
-            raise TypeError("position must be a tuple of 2 positive integers")
-        self.__position = value
+        """The summary line for a class docstring should fit on one line."""
+        str = "position must be a tuple of 2 positive integers"
+        if (type(value) is not tuple or len(value) != 2 or
+                type(value[0]) is not int or
+                type(value[1]) is not int or
+                value[0] < 0 or value[1] < 0):
+                raise TypeError(str)
+        else:
+            self.__position = value
 
     def area(self):
-        """Return the current area of the square."""
-        return (self.__size * self.__size)
+        """The summary line for a class docstring should fit on one line."""
+        return (self.__size ** 2)
 
     def my_print(self):
-        """Print the square with the # character."""
-        if self.__size == 0:
-            print("")
-            return
-
-        [print("") for i in range(0, self.__position[1])]
-        for i in range(0, self.__size):
-            [print(" ", end="") for j in range(0, self.__position[0])]
-            [print("#", end="") for k in range(0, self.__size)]
-            print("")
+        if self.__size is 0:
+            print()
+        else:
+            print('\n' * self.__position[1], end="")
+            for i in range(self.__size):
+                print(" " * self.__position[0], end="")
+                print("#" * self.__size)
