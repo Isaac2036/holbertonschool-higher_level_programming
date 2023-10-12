@@ -18,17 +18,17 @@ class Rectangle:
     @property
     def height(self):
         """
-        Este atributo regresa el ancho del rectángulo
+        Este atributo regresa el alto del rectángulo.
         Returns:
-            int: Retorna el ancho(height)
+            int: Retorna el alto(height)
         """
         return self.__height
     @height.setter
     def height(self, value):
-        """
-        Este atributo configura el ancho del rectángulo.
-        Args:
-            value (int): Este valor configura el ancho del rectágulo.
+	"""
+        Este atributo regresa el alto del rectángulo.
+        Returns:
+            int: Retorna el alto(height)
         """
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
@@ -40,12 +40,16 @@ class Rectangle:
         """
         Este atributo configura el ancho del rectángulo.
         Args:
-            value (int): Este valor configura el ancho del rectágulo.
+            value (int): Este valor configura el ancho del rectágulo(width).
         """
         return self.__width
     @width.setter
     def width(self, value):
-        """Getter & Setter for the attribute width"""
+        """
+        Este atributo configura el ancho del rectángulo.
+        Args:
+            value (int): Este valor configura el ancho del rectágulo(width).
+        """
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
