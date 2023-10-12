@@ -2,6 +2,8 @@
 """
 Este modulo define una clase
 """
+
+
 class Rectangle:
     """
     Esta clase define un rectángulo
@@ -25,10 +27,10 @@ class Rectangle:
         return self.__height
     @height.setter
     def height(self, value):
-	"""
-        Este atributo regresa el alto del rectángulo.
-        Returns:
-            int: Retorna el alto(height)
+        """
+        Este atributo configura el ancho del rectángulo.
+        Args:
+            value (int): Este valor configura el ancho del rectágulo.
         """
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
@@ -46,9 +48,9 @@ class Rectangle:
     @width.setter
     def width(self, value):
         """
-        Este atributo configura el ancho del rectángulo.
+        Este atributo configura el valor de __height
         Args:
-            value (int): Este valor configura el ancho del rectágulo(width).
+            value (int): Este valor configura el alto del rectángulo.
         """
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
