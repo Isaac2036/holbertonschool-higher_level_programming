@@ -1,0 +1,1 @@
+This is the repo of more querys :D
