@@ -8,7 +8,7 @@ La manipulación del DOM es el proceso de acceder, modificar o manipular los ele
 
 ## Contenido del repositorio
 
-En este repositorio, encontrarás ejemplos de cómo
+En este repositorio, encontrarás ejemplos cómo:
 <ul>
     <li> 0. Color Me </li>
     <li> 1. Click and turn red </li>
