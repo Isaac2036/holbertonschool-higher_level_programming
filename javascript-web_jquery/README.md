@@ -14,4 +14,16 @@ Animaciones: Ejemplos de cómo crear animaciones y efectos visuales en elementos
 Solicitudes AJAX: Ejemplos de cómo realizar solicitudes asíncronas al servidor y manejar las respuestas utilizando jQuery.
 
 ## Ejemplos
-En la carpeta examples, encontrarás ejemplos de código que muestran diferentes aspectos del uso de jQuery en el desarrollo web.
+En este repositorio, encontrarás ejemplos cómo:
+<ul>
+    <li> 0. No JQuery </li>
+    <li> 1. With JQuery </li>
+    <li> 2. Click and turn red </li>
+    <li> 3. Add `.red` class </li>
+    <li> 4. Toggle classes </li>
+    <li> 5. List of elements </li>
+    <li> 6. Change the text </li>
+    <li> 7. Star wars character </li>
+    <li> 8. Star Wars movies </li>
+    <li> 9. Say Hello! </li>
+</ul>
